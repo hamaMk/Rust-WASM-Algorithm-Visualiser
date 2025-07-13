@@ -2,6 +2,11 @@
 
 A web-based algorithm visualiser built with [Leptos](https://leptos.dev/) and Rust. This project animates popular sorting algorithms step-by-step to help users understand how they work internally.
 
+## 🖥️ Demo
+https://hamamk.github.io/Rust-WASM-Algorithm-Visualiser/
+
+---
+
 ## ✨ Features
 
 - ✅ Visual step-by-step animation of sorting algorithms

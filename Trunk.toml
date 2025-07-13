@@ -1,2 +1,4 @@
 [build]
 public_url = "/Rust-WASM-Algorithm-Visualiser/"
+filehash = false
+dist="docs"

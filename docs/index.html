@@ -11,13 +11,13 @@
     <!-- Bootstrap 5 JS (optional, for things like modals or dropdowns) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-<link rel="modulepreload" href="/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser-8e024f2f5b925c62.js" crossorigin="anonymous" integrity="sha384-GzvZN3PURDJlXj5wGHR+2DxViAHnw8MrUlLRskqwljGj57q6/YYo9ejuD0kwTMKZ"><link rel="preload" href="/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser-8e024f2f5b925c62_bg.wasm" crossorigin="anonymous" integrity="sha384-YMQc0v2htJcpYHYF77QYBdmIlRFh0Wjmjd+9nJWCJJnPeaKPi0qF7FEFKC77cnI4" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser.js" crossorigin="anonymous" integrity="sha384-vkm0965ToKzAyhteHwso+V934hI5QFPUWzsxG0pwlBusPeoFC/oJfV7ZJRGHuQ5s"><link rel="preload" href="/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser_bg.wasm" crossorigin="anonymous" integrity="sha384-9Vj+lovwApPXoGo8fBPw6lX2o9r4ACLPrHVT8T8Cm+GuTsA7CfetlWRNy7SflekY" as="fetch" type="application/wasm"></head>
 <body>
 <!-- Leptos will mount here -->
 
 <script type="module">
-import init, * as bindings from '/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser-8e024f2f5b925c62.js';
-const wasm = await init({ module_or_path: '/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser-8e024f2f5b925c62_bg.wasm' });
+import init, * as bindings from '/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser.js';
+const wasm = await init({ module_or_path: '/Rust-WASM-Algorithm-Visualiser/Algorithm-Visualiser_bg.wasm' });
 
 
 window.wasmBindings = bindings;
