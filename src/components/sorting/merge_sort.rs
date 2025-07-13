@@ -95,7 +95,7 @@ pub fn MergeSort() -> impl IntoView {
                     set_snapshots.set(steps.clone());
                     set_current_step.set(0);
 
-                    for (i, snapshot) in steps.into_iter().enumerate() {
+                    for (i, _snapshot) in steps.into_iter().enumerate() {
                         set_current_step.set(i);
                         TimeoutFuture::new(speed).await; // Use `speed` in ms
                     }
