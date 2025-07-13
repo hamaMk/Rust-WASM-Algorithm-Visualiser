@@ -23,3 +23,14 @@ pub fn NavLink(href: String, children: Children) -> impl IntoView {
         </A>
     }
 }
+
+#[component]
+pub fn NotFound() -> impl IntoView {
+    view! {
+        <div class="text-center">
+            <h1 class="display-4">404</h1>
+            <p class="lead">Page not found.</p>
+            <a class="btn btn-primary" href="/">"Go Home"</a>
+        </div>
+    }
+}

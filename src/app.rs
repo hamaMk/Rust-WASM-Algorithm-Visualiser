@@ -2,7 +2,7 @@ use leptos::prelude::*;
 use leptos_router::components::{Route, Router, Routes};
 use leptos_router::*;
 use crate::components::app::{About, Home, PathFinding, Sorting};
-use crate::components::common::NavLink;
+use crate::components::common::{NavLink, NotFound};
 use crate::components::sorting::merge_sort::MergeSort;
 
 #[component]
@@ -36,7 +36,7 @@ pub fn App() -> impl IntoView {
                 </div>
             </nav>
             <main class="container mt-5">
-                <Routes fallback=|| "Not found.">
+                <Routes fallback=|| view! { <NotFound /> }>
                     <Route path=path!("/") view=Home />
                     <Route path=path!("/sorting") view=Sorting />
                     <Route path=path!("/sorting/merge-sort") view=MergeSort />
