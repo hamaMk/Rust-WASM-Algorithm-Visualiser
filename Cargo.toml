@@ -14,3 +14,4 @@ log = "0.4.27"
 gloo-timers = {version = "0.3.0", features = ["futures"]}
 console_log = "1.0.0"
 async-recursion = "1.1.1"
+chrono = "0.4.41"
