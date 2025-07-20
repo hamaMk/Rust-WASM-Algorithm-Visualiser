@@ -4,7 +4,7 @@ use leptos_router::hooks::use_location;
 use leptos_router::components::{A};
 
 #[component]
-pub fn NavLink(href: String, children: Children) -> impl IntoView {
+pub fn nav_link(href: String, children: Children) -> impl IntoView {
     let location = use_location();
     let href_owned = href.clone();
     let is_active = move || location.pathname.get() == href_owned;
@@ -25,7 +25,7 @@ pub fn NavLink(href: String, children: Children) -> impl IntoView {
 }
 
 #[component]
-pub fn NotFound() -> impl IntoView {
+pub fn not_found() -> impl IntoView {
     view! {
         <div class="text-center">
             <h1 class="display-4">404</h1>
