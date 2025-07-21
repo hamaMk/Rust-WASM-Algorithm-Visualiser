@@ -63,10 +63,16 @@ Combined, Rust + WASM make this tool lightweight, efficient, and perfectly suite
 ```
 
 
-##  🛠️ Development Notes
+##  🛠️ Development 
+### Notes
 * Sorting animations are triggered reactively using Effect::new
 * Visualisation is rendered using <For> loops with reactive styling
 * Uses spawn_local and TimeoutFuture for step delays
+
+### Release
+```bash
+    trunk build --release --config trunk-release.toml
+```
 
 
 ## 👨‍💻 Author

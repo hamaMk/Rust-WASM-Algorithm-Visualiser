@@ -1,7 +1,8 @@
 use leptos::prelude::*;
 use leptos::children::Children;
 use leptos_router::hooks::use_location;
-use leptos_router::components::{A};
+use leptos_router::components::A;
+use chrono::{Utc, Datelike};
 
 #[component]
 pub fn NavLink(href: String, children: Children) -> impl IntoView {
@@ -34,3 +35,33 @@ pub fn NotFound() -> impl IntoView {
         </div>
     }
 }
+
+#[component]
+pub fn Footer() -> impl IntoView {
+    let year = Utc::now().year();
+
+    view! {
+        <div class="bg-dark p-5 text-center text-light d-flex flex-column">
+            <span>"Made with ❤️🦀 Rust + WASM"</span>
+            <span>{format!("Hamandishe Mkandabvute © {}", year)}</span>
+        </div>
+    }
+}
+
+#[component]
+pub fn AlgorithmCard(href: String, title: String) -> impl IntoView {
+    view! {
+        <A href=href attr:class="text-decoration-none">
+            <div class="card w-50">
+                <div class="card-body">
+                    <h5 class="card-title">{title}</h5>
+                    <p class="card-text">
+                        <span>""</span>
+                    </p>
+                    <span class="stretched-link"></span>
+                </div>
+            </div>
+        </A>
+    }
+}
+
